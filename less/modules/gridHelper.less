@@ -1,0 +1,55 @@
+#grid {
+	display: none;
+	pointer-events: none;
+}
+
+.grid:not(.no-helper) #grid {
+	display: block;
+	position: fixed;
+
+	height: 100vh;
+	width: 100%;
+
+	div {
+		.column(1);
+		height: 100%;
+
+		&:nth-child(even) {
+			background-color: rgba(75, 0, 0, 0.25);
+		}
+		&:nth-child(odd) {
+			background-color: rgba(75, 0, 0, 0.1);
+		}
+	}
+}
+
+.no-helper .helper {
+	display: none;
+}
+
+#toggleGridButton {
+	position: fixed;
+	bottom: 1rem;
+	right: 1rem;
+
+	cursor: pointer;
+	border: none;
+	background-color: transparent;
+	outline: none;
+
+	margin: 0;
+	padding: 0;
+
+	opacity: 0.2;
+
+	-webkit-transition: opacity 0.25s linear;
+	-moz-transition: opacity 0.25s linear;
+	-ms-transition: opacity 0.25s linear;
+	-o-transition: opacity 0.25s linear;
+	transition: opacity 0.25s linear;
+
+
+	&:hover {
+		opacity: 0.6;
+	}
+}

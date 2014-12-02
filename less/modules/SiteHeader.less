@@ -1,0 +1,44 @@
+.SiteHeader {
+
+	.row(14);
+
+	position: absolute;
+	top: 0;
+	margin-top: 4rem;
+	height: 8rem;
+
+	&-logo {
+		.column(5,14);
+		.push(1);
+		.pull(1);
+		height: 100%;
+
+		overflow: hidden;
+
+		a {
+			display: inline-block;
+			height: 100%;
+			width: 100%;
+			text-indent: -9999px;
+		}
+
+		background-image: url('./img/logo-x-small.png');
+		background-size: contain;
+		background-repeat: no-repeat;
+
+		@media (min-width: 640px) {
+			background-image: url('./img/logo-small.png');
+		}
+		@media (min-width: 960px) {
+			background-image: url('./img/logo-default.png');
+		}
+
+	}
+
+	&-navigation {
+		.column(6,14);
+		height: 100%;
+
+		background-color: rgba(255, 255, 255, 0.2);
+	}
+}
