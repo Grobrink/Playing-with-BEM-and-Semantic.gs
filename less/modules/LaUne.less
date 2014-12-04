@@ -9,8 +9,14 @@
 
 
 	&-header {
-		.column(12,14);
-		.push(1);
+		.column(14,14);
+		.push(0);
+
+		@media (min-width: 620px) {
+			.column(12,14);
+			.push(1);
+		}
+		
 
 		height: 4rem;
 		box-sizing: border-box;
@@ -22,8 +28,14 @@
 	}
 
 	&-content {
-		.column(12,14);
-		.push(1);
+		.column(14,14);
+		.push(0);
+
+		@media (min-width: 620px) {
+			.column(12,14);
+			.push(1);
+		}
+
 		height: auto;
 
 		background-color: rgba(255, 255, 255, 0.2);
