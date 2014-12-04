@@ -99,12 +99,24 @@
 		.BlogArticle-media-renderer {
 			display: block;
 
-			min-width: 100%;
+			min-width: 0;
 			max-width: 100%;
 
-			min-height: 100%;
-			height: @BlogArticle__maxHeight;
-			object-fit: cover;
+			min-height: 0;
+
+			height: auto;
+			width: 100%;
+			
+			@media (min-width: 620px) {
+
+				min-width: 100%;
+				max-width: 100%;
+
+				min-height: 100%;
+				height: @BlogArticle__maxHeight;
+				object-fit: cover;
+			}
+
 		}
 
 		.BlogArticle-media-description {
