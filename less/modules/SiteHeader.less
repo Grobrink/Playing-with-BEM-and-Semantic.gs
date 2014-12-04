@@ -1,6 +1,6 @@
 .SiteHeader {
 
-	.row(14);
+	.row(@columns);
 
 	position: absolute;
 	top: 0;
@@ -8,7 +8,7 @@
 	height: 8rem;
 
 	&-logo {
-		.column(5,14);
+		.column(5,@columns);
 		.push(1);
 		.pull(1);
 		height: 100%;
@@ -36,7 +36,16 @@
 	}
 
 	&-navigation {
-		.column(6,14);
+		.column(10,@columns);
+		.push(1);
+
+		@media (min-width: 620px) {
+			.column(10,@columns);
+		}
+
+		@media (min-width: 780px) {
+			.column(6,@columns);
+		}
 		height: 100%;
 
 		background-color: rgba(255, 255, 255, 0.2);

@@ -1,0 +1,17 @@
+.Sidebar {
+
+		.column(16,@columns);
+		.push(1,@columns);
+
+		@media (min-width: 780px) {
+			.column(5,@columns);
+			.push(0,@columns);
+			
+			position: relative;
+			top: -4rem;
+		}
+
+		margin-top: 2rem;
+
+		background-color: rgba(255, 255, 255, 0.5);
+}

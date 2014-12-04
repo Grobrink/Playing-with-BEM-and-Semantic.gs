@@ -1,6 +1,6 @@
 .LaUne {
 
-	.row(14);
+	.row(@columns);
 
 	min-height: 100vh;
 
@@ -9,14 +9,18 @@
 
 
 	&-header {
-		.column(14,14);
+		.column(18,@columns);
 		.push(0);
 
 		@media (min-width: 620px) {
-			.column(12,14);
+			.column(16,@columns);
 			.push(1);
 		}
-		
+
+		@media (min-width: 780px) {
+			.column(12,@columns);
+			.push(1);
+		}
 
 		height: 4rem;
 		box-sizing: border-box;
@@ -28,11 +32,16 @@
 	}
 
 	&-content {
-		.column(14,14);
+		.column(18,@columns);
 		.push(0);
 
 		@media (min-width: 620px) {
-			.column(12,14);
+			.column(16,@columns);
+			.push(1);
+		}
+
+		@media (min-width: 780px) {
+			.column(12,@columns);
 			.push(1);
 		}
 
