@@ -8,9 +8,6 @@
 		<link href="./css/styles.css" media="screen" rel="stylesheet" type="text/css">
 	</head>
 
-	<!--
-	Le body est en 100%
-	-->
 	<body>
 
 		<div class="BodyLayout">
@@ -23,24 +20,12 @@
 
 				<nav class="SiteHeader-navigation Navigation">
 					<ul>
-						<li class="Navigation-item">
-							<a href="#" title="link">lien 1</a>
-						</li>
-						<li class="Navigation-item">
-							<a href="#" title="link">lien 2</a>
-						</li>
-						<li class="Navigation-item">
-							<a href="#" title="link">lien 3</a>
-						</li>
-						<li class="Navigation-item">
-							<a href="#" title="link">lien 4</a>
-						</li>
-						<li class="Navigation-item">
-							<a href="#" title="link">lien 5</a>
-						</li>
-						<li class="Navigation-item">
-							<a href="#" title="link">lien 6</a>
-						</li>
+						<a class="Navigation-item" href="#" title="link">lien 1</a>
+						<a class="Navigation-item" href="#" title="link">lien 2</a>
+						<a class="Navigation-item" href="#" title="link">lien 3</a>
+						<a class="Navigation-item" href="#" title="link">lien 4</a>
+						<a class="Navigation-item" href="#" title="link">lien 5</a>
+						<a class="Navigation-item" href="#" title="link">lien 6</a>
 					</ul>
 				</nav>
 			</header>
@@ -98,56 +83,6 @@
 								</footer>
 						</article>
 					</div>
-
-					<aside class="Sidebar">
-						<header class="Sidebar-header">
-							<h1>Grobrink</h1>
-							<h2>Pierre Lefèvre</h2>
-						</header>
-
-						<section class="Sidebar-content WidgetNumbers">
-							<h1>Bio</h1>
-							<ul>
-								<li class="WidgetNumbers-item">
-									<span>Âge&nbsp;: 28 ans</span>
-								</li>
-								<li class="WidgetNumbers-item">
-									<span>Taille&nbsp;: 186 cm</span>
-								</li>
-								<li class="WidgetNumbers-item">
-									<span>IMC&nbsp;: 22.5</span>
-								</li>
-								<li class="WidgetNumbers-item">
-									<span>VMA&nbsp;: ??</span>
-								</li>
-								<li class="WidgetNumbers-item">
-									<span>VO²Max&nbsp;: ??</span>
-								</li>
-							</ul>
-						</section>
-
-						<section class="Sidebar-content WidgetNumbers">
-							<h1>Les 7 derniers jours</h1>
-							<ul>
-								<li class="WidgetNumbers-item">Marche&nbsp;: <span>27 Km</span></li>
-								<li class="WidgetNumbers-item">Course&nbsp;: <span>54 Km</span></li>
-								<li class="WidgetNumbers-item">Vélo&nbsp;: <span>60 Km</span></li>
-							</ul>
-						</section>
-
-						<section class="Sidebar-content WidgetNumbers">
-							<h1>Le dernier mois</h1>
-							<ul>
-								<li class="WidgetNumbers-item">Marche&nbsp;: <span>112 Km</span></li>
-								<li class="WidgetNumbers-item">Course&nbsp;: <span>216 Km</span></li>
-								<li class="WidgetNumbers-item">Vélo&nbsp;: <span>258 Km</span></li>
-							</ul>
-						</section>
-
-						<footer class="Sidebar-footer">
-							Dernière mise à jour il y a <span>1 jours</span>
-						</footer>
-					</aside>
 
 				</section>
 
@@ -237,8 +172,69 @@
 					<footer>
 					</footer>
 				</section> -->
-
 			</main>
+
+			<aside class="Sidebar">
+				<header class="Sidebar-header">
+					<h1>Grobrink</h1>
+					<h2>Pierre Lefèvre</h2>
+				</header>
+
+				<section class="Sidebar-content WidgetNumbers">
+					<h1>Profil</h1>
+					<ul>
+						<li class="WidgetNumbers-item">
+							<span class="WidgetNumbers-label">Âge</span><span class="WidgetNumbers-value">28 ans</span>
+						</li>
+						<li class="WidgetNumbers-item">
+							<span class="WidgetNumbers-label">Taille</span><span class="WidgetNumbers-value">186 cm</span>
+						</li>
+						<li class="WidgetNumbers-item">
+							<span class="WidgetNumbers-label">IMC</span><span class="WidgetNumbers-value">22.5</span>
+						</li>
+						<li class="WidgetNumbers-item">
+							<span class="WidgetNumbers-label">VMA</span><span class="WidgetNumbers-value">??</span>
+						</li>
+						<li class="WidgetNumbers-item">
+							<span class="WidgetNumbers-label">VO²Max</span><span class="WidgetNumbers-value">??</span>
+						</li>
+					</ul>
+				</section>
+
+				<section class="Sidebar-content WidgetNumbers">
+					<h1>Les 7 derniers jours</h1>
+					<ul>
+						<li class="WidgetNumbers-item">
+							<span class="WidgetNumbers-label">Marche</span><span class="WidgetNumbers-value">27 Km</span>
+						</li>
+						<li class="WidgetNumbers-item">
+							<span class="WidgetNumbers-label">Course</span><span class="WidgetNumbers-value">54 Km</span>
+						</li>
+						<li class="WidgetNumbers-item">
+							<span class="WidgetNumbers-label">Vélo</span><span class="WidgetNumbers-value">60 Km</span>
+						</li>
+					</ul>
+				</section>
+
+				<section class="Sidebar-content WidgetNumbers">
+					<h1>Les 30 derniers jours</h1>
+					<ul>
+						<li class="WidgetNumbers-item">
+							<span class="WidgetNumbers-label">Marche</span><span class="WidgetNumbers-value">112 Km</span>
+						</li>
+						<li class="WidgetNumbers-item">
+							<span class="WidgetNumbers-label">Course</span><span class="WidgetNumbers-value">216 Km</span>
+						</li>
+						<li class="WidgetNumbers-item">
+							<span class="WidgetNumbers-label">Vélo</span><span class="WidgetNumbers-value">258 Km</span>
+						</li>
+					</ul>
+				</section>
+
+				<footer class="Sidebar-footer">
+					Dernière mise à jour il y a <span>1 jours</span>
+				</footer>
+			</aside>
 
 			<footer class="SiteFooter">
 			</footer>
