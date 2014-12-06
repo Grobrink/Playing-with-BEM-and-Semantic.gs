@@ -71,7 +71,19 @@
 
 		position: relative;
 
-		height: 100%;
+		height: auto;
+
+		@media (min-width: @smaller) {
+			height: 25rem;
+		}
+
+		@media (min-width: @medium) {
+			height: 25rem;
+		}
+
+		@media (min-width: @larger) {
+			height: auto;
+		}
 
 		overflow: hidden;
 
@@ -126,10 +138,19 @@
 
 			min-height: 0;
 
-			height: auto;
+			height: 20rem;
 			width: 100%;
+			object-fit: cover;
 
 			@media (min-width: @smaller) {
+				height: 25rem;
+			}
+
+			@media (min-width: @medium) {
+				height: 25rem;
+			}
+
+			@media (min-width: @larger) {
 
 				min-width: 100%;
 				max-width: 100%;
