@@ -1,4 +1,5 @@
-@import url(http://fonts.googleapis.com/css?family=Muli:300,400,400italic,300italic);
+@import url(http://fonts.googleapis.com/css?family=Dosis);
+@import url(http://fonts.googleapis.com/css?family=Pathway+Gothic+One);
 html,
 body,
 div,
@@ -161,7 +162,12 @@ body:after {
 }
 /* Color scheme */
 /* Semantic gs */
+/* Responsive breakpoints */
 /* Font */
+.titleFont {
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-weight: 100;
+}
 #grid {
   display: none;
   pointer-events: none;
@@ -213,7 +219,7 @@ body:after {
 html {
   width: 100%;
   font-size: 7px;
-  font-family: 'Muli', 'sans-serif';
+  font-family: 'Dosis', 'sans-serif';
 }
 @media (min-width: 620px) {
   html {
@@ -229,7 +235,7 @@ body {
 }
 a {
   color: #a4031f;
-  font-weight: boldd;
+  font-weight: bold;
 }
 .BodyLayout {
   display: inline;
@@ -303,7 +309,7 @@ a {
     margin: 0 0.60386473%;
   }
 }
-@media (min-width: 780px) {
+@media (min-width: 680px) {
   .SiteHeader-navigation {
     display: inline;
     float: left;
@@ -323,21 +329,68 @@ a {
   width: 13.04347826%;
   margin: 0 1.8115942%;
 }
-.SiteMainContent-laUne {
+.SiteMainContent-block {
   width: 100%;
-  padding-top: 14rem;
   background-color: #9db5b2;
+}
+.SiteMainContent-publicationList {
+  background-color: #ffffff;
+}
+.SiteMainContent-header {
+  display: inline;
+  float: left;
+  width: 98.79227053%;
+  margin: 0 0.60386473%;
+  margin-left: 0.60386473%;
+  box-sizing: border-box;
+  padding: 1.5rem 2rem;
+  color: #cf5c36;
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-weight: 100;
+  font-size: 4.5rem;
+  background-color: #0a2e36;
+}
+@media (min-width: 400px) {
+  .SiteMainContent-header {
+    display: inline;
+    float: left;
+    width: 87.68115942%;
+    margin: 0 0.60386473%;
+    margin-left: 6.15942029%;
+  }
+}
+@media (min-width: 680px) {
+  .SiteMainContent-header {
+    display: inline;
+    float: left;
+    width: 65.4589372%;
+    margin: 0 0.60386473%;
+    margin-left: 6.15942029%;
+    display: none;
+  }
 }
 .Sidebar {
   width: 100%;
-  max-width: 24rem;
   height: auto;
-  box-sizing: border-box;
-  margin-top: 2rem;
   font-size: 1.6rem;
-  background-color: #d0d3c7;
 }
-@media (min-width: 780px) {
+@media (max-width: 680px) {
+  .Sidebar {
+    display: block;
+    width: 101.20772947%;
+    margin: 0 -0.60386473%;
+    *zoom: 1;
+  }
+  .Sidebar:before,
+  .Sidebar:after {
+    content: "";
+    display: table;
+  }
+  .Sidebar:after {
+    clear: both;
+  }
+}
+@media (min-width: 680px) {
   .Sidebar {
     display: inline;
     float: left;
@@ -347,30 +400,38 @@ a {
     position: absolute;
     top: 14rem;
     right: 0;
+  }
+}
+.Sidebar-block {
+  margin-top: 2rem;
+  box-sizing: border-box;
+  background-color: #d0d3c7;
+}
+@media (min-width: 680px) {
+  .Sidebar-block {
+    width: 100%;
+    max-width: 24rem;
+    margin: auto;
     padding: 2rem;
   }
 }
-.Sidebar-content {
-  display: inline;
-  float: left;
-  width: 32.12560386%;
-  margin: 0 0.60386473%;
+.Sidebar-header h1,
+.Sidebar-header h2 {
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-weight: 100;
 }
-@media (min-width: 780px) {
-  .Sidebar-content {
-    width: 100%;
-    margin: 0;
-    margin-top: 1rem;
-  }
+.Sidebar-header h1 {
+  font-size: 2.5rem;
+}
+.Sidebar-header h2 {
+  font-size: 2rem;
 }
 .LaUne {
   display: block;
   width: 101.20772947%;
   margin: 0 -0.60386473%;
   *zoom: 1;
-  min-height: 100vh;
-  background-image: url('img/mont-blanc-01.jpg');
-  background-size: cover;
+  height: auto;
 }
 .LaUne:before,
 .LaUne:after {
@@ -380,36 +441,22 @@ a {
 .LaUne:after {
   clear: both;
 }
-.LaUne-header {
-  display: inline;
-  float: left;
-  width: 98.79227053%;
-  margin: 0 0.60386473%;
-  margin-left: 0.60386473%;
-  height: 5rem;
-  box-sizing: border-box;
-  padding: 1rem;
-  color: #cf5c36;
-  font-size: 2rem;
-  background-color: #0a2e36;
-}
 @media (min-width: 400px) {
-  .LaUne-header {
-    display: inline;
-    float: left;
-    width: 87.68115942%;
-    margin: 0 0.60386473%;
-    margin-left: 6.15942029%;
+  .LaUne {
+    background-image: url('img/mont-blanc-lq.jpg');
+    background-size: cover;
   }
 }
-@media (min-width: 780px) {
-  .LaUne-header {
-    display: inline;
-    float: left;
-    width: 65.4589372%;
-    margin: 0 0.60386473%;
-    margin-left: 6.15942029%;
-    display: none;
+@media (min-width: 680px) {
+  .LaUne {
+    background-image: url('img/mont-blanc-mq.jpg');
+    background-size: cover;
+  }
+}
+@media (min-width: 960px) {
+  .LaUne {
+    background-image: url('img/mont-blanc-hq.jpg');
+    background-size: cover;
   }
 }
 .LaUne-content {
@@ -430,7 +477,7 @@ a {
     margin-left: 6.15942029%;
   }
 }
-@media (min-width: 780px) {
+@media (min-width: 680px) {
   .LaUne-content {
     display: inline;
     float: left;
@@ -438,6 +485,139 @@ a {
     margin: 0 0.60386473%;
     margin-left: 6.15942029%;
   }
+}
+.LaUne {
+  display: block;
+  width: 101.20772947%;
+  margin: 0 -0.60386473%;
+  *zoom: 1;
+  height: auto;
+}
+.LaUne:before,
+.LaUne:after {
+  content: "";
+  display: table;
+}
+.LaUne:after {
+  clear: both;
+}
+@media (min-width: 400px) {
+  .LaUne {
+    background-image: url('img/mont-blanc-lq.jpg');
+    background-size: cover;
+  }
+}
+@media (min-width: 680px) {
+  .LaUne {
+    background-image: url('img/mont-blanc-mq.jpg');
+    background-size: cover;
+  }
+}
+@media (min-width: 960px) {
+  .LaUne {
+    background-image: url('img/mont-blanc-hq.jpg');
+    background-size: cover;
+  }
+}
+.LaUne-content {
+  display: inline;
+  float: left;
+  width: 98.79227053%;
+  margin: 0 0.60386473%;
+  margin-left: 0.60386473%;
+  height: auto;
+  background-color: transparent;
+}
+@media (min-width: 620px) {
+  .LaUne-content {
+    display: inline;
+    float: left;
+    width: 87.68115942%;
+    margin: 0 0.60386473%;
+    margin-left: 6.15942029%;
+  }
+}
+@media (min-width: 680px) {
+  .LaUne-content {
+    display: inline;
+    float: left;
+    width: 65.4589372%;
+    margin: 0 0.60386473%;
+    margin-left: 6.15942029%;
+  }
+}
+.LaUne {
+  padding-top: 14rem;
+}
+@media (min-width: 400px) {
+  .LaUne {
+    background-image: url('img/mont-blanc-lq.jpg');
+    background-size: cover;
+  }
+}
+@media (min-width: 680px) {
+  .LaUne {
+    background-image: url('img/mont-blanc-mq.jpg');
+    background-size: cover;
+  }
+}
+@media (min-width: 960px) {
+  .LaUne {
+    background-image: url('img/mont-blanc-hq.jpg');
+    background-size: cover;
+  }
+}
+.LaUne,
+.PublicationList {
+  display: block;
+  width: 101.20772947%;
+  margin: 0 -0.60386473%;
+  *zoom: 1;
+  height: auto;
+}
+.LaUne:before,
+.PublicationList:before,
+.LaUne:after,
+.PublicationList:after {
+  content: "";
+  display: table;
+}
+.LaUne:after,
+.PublicationList:after {
+  clear: both;
+}
+.LaUne-content,
+.PublicationList-content {
+  display: inline;
+  float: left;
+  width: 98.79227053%;
+  margin: 0 0.60386473%;
+  margin-left: 0.60386473%;
+  height: auto;
+  background-color: transparent;
+}
+@media (min-width: 620px) {
+  .LaUne-content,
+  .PublicationList-content {
+    display: inline;
+    float: left;
+    width: 87.68115942%;
+    margin: 0 0.60386473%;
+    margin-left: 6.15942029%;
+  }
+}
+@media (min-width: 680px) {
+  .LaUne-content,
+  .PublicationList-content {
+    display: inline;
+    float: left;
+    width: 65.4589372%;
+    margin: 0 0.60386473%;
+    margin-left: 6.15942029%;
+  }
+}
+.PublicationList {
+  margin-top: 6rem;
 }
 .BlogArticle {
   display: block;
@@ -481,6 +661,8 @@ a {
   margin-left: 0.60386473%;
   box-sizing: border-box;
   padding: 2rem;
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-weight: 100;
   font-size: 1.6rem;
   background-color: #d0d3c7;
 }
@@ -511,6 +693,7 @@ a {
   font-size: 2.4rem;
   line-height: 1.2em;
   margin-bottom: 0.4em;
+  font-weight: 100;
 }
 .BlogArticle-media {
   display: inline;
@@ -593,7 +776,26 @@ a {
     margin-left: 0.60386473%;
   }
 }
-.BlogArticle__1of1 .BlogArticle-media-renderer {
+.BlogArticle__1of1,
+.BlogArticle__oneOfMany {
+  display: block;
+  width: 101.20772947%;
+  margin: 0 -0.60386473%;
+  *zoom: 1;
+}
+.BlogArticle__1of1:before,
+.BlogArticle__oneOfMany:before,
+.BlogArticle__1of1:after,
+.BlogArticle__oneOfMany:after {
+  content: "";
+  display: table;
+}
+.BlogArticle__1of1:after,
+.BlogArticle__oneOfMany:after {
+  clear: both;
+}
+.BlogArticle__1of1 .BlogArticle-media-renderer,
+.BlogArticle__oneOfMany .BlogArticle-media-renderer {
   display: block;
   min-width: 0;
   max-width: 100%;
@@ -602,7 +804,8 @@ a {
   width: 100%;
 }
 @media (min-width: 620px) {
-  .BlogArticle__1of1 .BlogArticle-media-renderer {
+  .BlogArticle__1of1 .BlogArticle-media-renderer,
+  .BlogArticle__oneOfMany .BlogArticle-media-renderer {
     min-width: 100%;
     max-width: 100%;
     min-height: 100%;
@@ -610,7 +813,8 @@ a {
     object-fit: cover;
   }
 }
-.BlogArticle__1of1 .BlogArticle-media-description {
+.BlogArticle__1of1 .BlogArticle-media-description,
+.BlogArticle__oneOfMany .BlogArticle-media-description {
   font-size: 1.6rem;
   position: absolute;
   bottom: 0%;
@@ -625,28 +829,39 @@ a {
   -o-transition: opacity 0.2s;
   transition: opacity 0.2s;
 }
+.BlogArticle__oneOfMany {
+  margin-bottom: 6rem;
+}
+.WidgetNumbers-title {
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-weight: 100;
+}
 .WidgetNumbers-item {
   list-style: none;
   margin-bottom: 0.5rem;
 }
 .WidgetNumbers-label {
-  display: inline-block;
-  width: 50%;
-  max-width: 10rem;
-  box-sizing: border-box;
   padding: 0.5rem 1rem;
   text-align: right;
   color: #ffffff;
   background-color: #cf5c36;
 }
 .WidgetNumbers-value {
-  display: inline-block;
-  width: 50%;
-  max-width: 10rem;
-  box-sizing: border-box;
   padding: 0.4rem 1rem;
   color: #0a2e36;
   border: 0.1rem solid #cf5c36;
   border-left: 0;
   background-color: #ffffff;
+}
+.WidgetNumbers-label,
+.WidgetNumbers-value {
+  display: inline-block;
+  width: 50%;
+  box-sizing: border-box;
+}
+@media (min-width: 680px) {
+  .WidgetNumbers-label,
+  .WidgetNumbers-value {
+    max-width: 10rem;
+  }
 }

@@ -29,7 +29,7 @@
 		@media (min-width: 640px) {
 			background-image: url('./img/logo-small.png');
 		}
-		@media (min-width: 960px) {
+		@media (min-width: @larger) {
 			background-image: url('./img/logo-default.png');
 		}
 
@@ -39,11 +39,11 @@
 		.column(10,@columns);
 		.push(1);
 
-		@media (min-width: 620px) {
+		@media (min-width: @smaller) {
 			.column(10,@columns);
 		}
 
-		@media (min-width: 780px) {
+		@media (min-width: @medium) {
 			.column(6,@columns);
 		}
 		height: 100%;

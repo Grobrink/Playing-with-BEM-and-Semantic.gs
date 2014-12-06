@@ -32,9 +32,9 @@
 
 			<main role="main" class="SiteMainContent">
 
-				<section id="la-une" class="SiteMainContent-laUne LaUne">
+				<section id="la-une" class="SiteMainContent-block LaUne">
 
-					<header class="LaUne-header">
+					<header class="SiteMainContent-header">
 						<h1>
 							À La une
 						</h1>
@@ -43,9 +43,9 @@
 					<div class="LaUne-content">
 						<article class="BlogArticle BlogArticle__1of1">
 							<header class="BlogArticle-header">
-								<h1>Chronique d'une ascension</h1>
+								<h1>Petit crapaud qui danse dans la pluie</h1>
 								<p>
-									Publié le: <time pubdate datetime="2014-12-02">2 décembre 2014</time>
+									<time pubdate datetime="2014-12-02">2 décembre 2014</time>
 								</p>
 							</header>
 
@@ -86,21 +86,49 @@
 
 				</section>
 
-				<!-- <section id="dernieres-publications" class="SiteMainContent-publicationList">
-					<header class="SiteMainContent-title">
+				<section id="dernieres-publications" class="SiteMainContent-block PublicationList">
+
+					<header class="SiteMainContent-header">
 						<h1>
 							Dernières publications
 						</h1>
 					</header>
 
-					<div class="PublicationList">
-						<article class="BlogArticle.1of4">
+					<div class="PublicationList-content">
+						<article class="BlogArticle__oneOfMany">
+
 							<header class="BlogArticle-header">
-								<h1>Article 77</h1>
+								<h1>Chronique d'une ascension</h1>
 								<p>
-									Publié le: <time pubdate datetime=""></time>
+									<time pubdate datetime="2014-12-02">2 décembre 2014</time>
 								</p>
 							</header>
+
+							<picture class="BlogArticle-media">
+
+								<source
+									media="(min-width: 1280px)"
+									srcset="./medias/images/substitution-hq.jpg">
+
+								<source
+									media="(min-width: 960px)"
+									srcset="./medias/images/substitution-mq.jpg">
+
+								<source
+									media="(min-width: 680px)"
+									srcset="./medias/images/substitution-lq.jpg">
+
+								<source
+									media="(min-width: 480px)"
+									srcset="./medias/images/substitution-vlq.jpg">
+
+								<source
+									srcset="./medias/images/substitution-vlq.jpg">
+
+								<img class="BlogArticle-media-renderer" src="./medias/images/substitution-mq.jpg" alt="This picture loads on non-supporting browsers.">
+
+								<p class="BlogArticle-media-description">Accessible text.</p>
+							</picture>
 
 							<div class="BlogArticle-content">
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -115,13 +143,40 @@
 							</footer>
 						</article>
 
-						<article class="BlogArticle.1of4">
+						<article class="BlogArticle__oneOfMany">
+
 							<header class="BlogArticle-header">
-								<h1>Article 76</h1>
+								<h1>Chronique d'une ascension</h1>
 								<p>
-									Publié le: <time pubdate datetime=""></time>
+									<time pubdate datetime="2014-12-02">2 décembre 2014</time>
 								</p>
 							</header>
+
+							<picture class="BlogArticle-media">
+
+								<source
+									media="(min-width: 1280px)"
+									srcset="./medias/images/substitution-hq.jpg">
+
+								<source
+									media="(min-width: 960px)"
+									srcset="./medias/images/substitution-mq.jpg">
+
+								<source
+									media="(min-width: 680px)"
+									srcset="./medias/images/substitution-lq.jpg">
+
+								<source
+									media="(min-width: 480px)"
+									srcset="./medias/images/substitution-vlq.jpg">
+
+								<source
+									srcset="./medias/images/substitution-vlq.jpg">
+
+								<img class="BlogArticle-media-renderer" src="./medias/images/substitution-mq.jpg" alt="This picture loads on non-supporting browsers.">
+
+								<p class="BlogArticle-media-description">Accessible text.</p>
+							</picture>
 
 							<div class="BlogArticle-content">
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -131,13 +186,40 @@
 							</footer>
 						</article>
 
-						<article class="BlogArticle.1of4">
+						<article class="BlogArticle__oneOfMany">
+
 							<header class="BlogArticle-header">
-								<h1>Article 75</h1>
+								<h1>Chronique d'une ascension</h1>
 								<p>
-									Publié le: <time pubdate datetime=""></time>
+									<time pubdate datetime="2014-12-02">2 décembre 2014</time>
 								</p>
 							</header>
+
+							<picture class="BlogArticle-media">
+
+								<source
+									media="(min-width: 1280px)"
+									srcset="./medias/images/substitution-hq.jpg">
+
+								<source
+									media="(min-width: 960px)"
+									srcset="./medias/images/substitution-mq.jpg">
+
+								<source
+									media="(min-width: 680px)"
+									srcset="./medias/images/substitution-lq.jpg">
+
+								<source
+									media="(min-width: 480px)"
+									srcset="./medias/images/substitution-vlq.jpg">
+
+								<source
+									srcset="./medias/images/substitution-vlq.jpg">
+
+								<img class="BlogArticle-media-renderer" src="./medias/images/substitution-mq.jpg" alt="This picture loads on non-supporting browsers.">
+
+								<p class="BlogArticle-media-description">Accessible text.</p>
+							</picture>
 
 							<div class="BlogArticle-content">
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -152,13 +234,40 @@
 							</footer>
 						</article>
 
-						<article class="BlogArticle.1of4">
+						<article class="BlogArticle__oneOfMany">
+
 							<header class="BlogArticle-header">
-								<h1>Article 74</h1>
+								<h1>Chronique d'une ascension</h1>
 								<p>
-									Publié le: <time pubdate datetime=""></time>
+									<time pubdate datetime="2014-12-02">2 décembre 2014</time>
 								</p>
 							</header>
+
+							<picture class="BlogArticle-media">
+
+								<source
+									media="(min-width: 1280px)"
+									srcset="./medias/images/substitution-hq.jpg">
+
+								<source
+									media="(min-width: 960px)"
+									srcset="./medias/images/substitution-mq.jpg">
+
+								<source
+									media="(min-width: 680px)"
+									srcset="./medias/images/substitution-lq.jpg">
+
+								<source
+									media="(min-width: 480px)"
+									srcset="./medias/images/substitution-vlq.jpg">
+
+								<source
+									srcset="./medias/images/substitution-vlq.jpg">
+
+								<img class="BlogArticle-media-renderer" src="./medias/images/substitution-mq.jpg" alt="This picture loads on non-supporting browsers.">
+
+								<p class="BlogArticle-media-description">Accessible text.</p>
+							</picture>
 
 							<div class="BlogArticle-content">
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -171,73 +280,77 @@
 
 					<footer>
 					</footer>
-				</section> -->
+				</section>
 			</main>
 
 			<aside class="Sidebar">
-				<header class="Sidebar-header">
-					<h1>Grobrink</h1>
-					<h2>Pierre Lefèvre</h2>
-				</header>
 
-				<section class="Sidebar-content WidgetNumbers">
-					<h1>Profil</h1>
-					<ul>
-						<li class="WidgetNumbers-item">
-							<span class="WidgetNumbers-label">Âge</span><span class="WidgetNumbers-value">28 ans</span>
-						</li>
-						<li class="WidgetNumbers-item">
-							<span class="WidgetNumbers-label">Taille</span><span class="WidgetNumbers-value">186 cm</span>
-						</li>
-						<li class="WidgetNumbers-item">
-							<span class="WidgetNumbers-label">IMC</span><span class="WidgetNumbers-value">22.5</span>
-						</li>
-						<li class="WidgetNumbers-item">
-							<span class="WidgetNumbers-label">VMA</span><span class="WidgetNumbers-value">??</span>
-						</li>
-						<li class="WidgetNumbers-item">
-							<span class="WidgetNumbers-label">VO²Max</span><span class="WidgetNumbers-value">??</span>
-						</li>
-					</ul>
+				<section class="Sidebar-block">
+
+					<header class="Sidebar-header">
+						<h1>Grobrink</h1>
+						<h2>En quelques chiffres</h2>
+					</header>
+
+					<section class="Sidebar-content WidgetNumbers">
+						<h1 class="WidgetNumbers-title">Profil</h1>
+						<ul>
+							<li class="WidgetNumbers-item">
+								<span class="WidgetNumbers-label">Âge</span><span class="WidgetNumbers-value">28 ans</span>
+							</li>
+							<li class="WidgetNumbers-item">
+								<span class="WidgetNumbers-label">Taille</span><span class="WidgetNumbers-value">186 cm</span>
+							</li>
+							<li class="WidgetNumbers-item">
+								<span class="WidgetNumbers-label">IMC</span><span class="WidgetNumbers-value">22.5</span>
+							</li>
+							<li class="WidgetNumbers-item">
+								<span class="WidgetNumbers-label">VMA</span><span class="WidgetNumbers-value">??</span>
+							</li>
+							<li class="WidgetNumbers-item">
+								<span class="WidgetNumbers-label">VO²Max</span><span class="WidgetNumbers-value">??</span>
+							</li>
+						</ul>
+					</section>
+
+					<section class="Sidebar-content WidgetNumbers">
+						<h1 class="WidgetNumbers-title">Les 7 derniers jours</h1>
+						<ul>
+							<li class="WidgetNumbers-item">
+								<span class="WidgetNumbers-label">Marche</span><span class="WidgetNumbers-value">27 Km</span>
+							</li>
+							<li class="WidgetNumbers-item">
+								<span class="WidgetNumbers-label">Course</span><span class="WidgetNumbers-value">54 Km</span>
+							</li>
+							<li class="WidgetNumbers-item">
+								<span class="WidgetNumbers-label">Vélo</span><span class="WidgetNumbers-value">60 Km</span>
+							</li>
+						</ul>
+					</section>
+
+					<section class="Sidebar-content WidgetNumbers">
+						<h1 class="WidgetNumbers-title">Les 30 derniers jours</h1>
+						<ul>
+							<li class="WidgetNumbers-item">
+								<span class="WidgetNumbers-label">Marche</span><span class="WidgetNumbers-value">112 Km</span>
+							</li>
+							<li class="WidgetNumbers-item">
+								<span class="WidgetNumbers-label">Course</span><span class="WidgetNumbers-value">216 Km</span>
+							</li>
+							<li class="WidgetNumbers-item">
+								<span class="WidgetNumbers-label">Vélo</span><span class="WidgetNumbers-value">258 Km</span>
+							</li>
+						</ul>
+					</section>
+
+					<footer class="Sidebar-footer">
+						Dernière mise à jour il y a <span>1 jours</span>
+					</footer>
 				</section>
-
-				<section class="Sidebar-content WidgetNumbers">
-					<h1>Les 7 derniers jours</h1>
-					<ul>
-						<li class="WidgetNumbers-item">
-							<span class="WidgetNumbers-label">Marche</span><span class="WidgetNumbers-value">27 Km</span>
-						</li>
-						<li class="WidgetNumbers-item">
-							<span class="WidgetNumbers-label">Course</span><span class="WidgetNumbers-value">54 Km</span>
-						</li>
-						<li class="WidgetNumbers-item">
-							<span class="WidgetNumbers-label">Vélo</span><span class="WidgetNumbers-value">60 Km</span>
-						</li>
-					</ul>
-				</section>
-
-				<section class="Sidebar-content WidgetNumbers">
-					<h1>Les 30 derniers jours</h1>
-					<ul>
-						<li class="WidgetNumbers-item">
-							<span class="WidgetNumbers-label">Marche</span><span class="WidgetNumbers-value">112 Km</span>
-						</li>
-						<li class="WidgetNumbers-item">
-							<span class="WidgetNumbers-label">Course</span><span class="WidgetNumbers-value">216 Km</span>
-						</li>
-						<li class="WidgetNumbers-item">
-							<span class="WidgetNumbers-label">Vélo</span><span class="WidgetNumbers-value">258 Km</span>
-						</li>
-					</ul>
-				</section>
-
-				<footer class="Sidebar-footer">
-					Dernière mise à jour il y a <span>1 jours</span>
-				</footer>
 			</aside>
 
-			<footer class="SiteFooter">
-			</footer>
+			<!-- <footer class="SiteFooter">
+			</footer> -->
 
 		</div>
 

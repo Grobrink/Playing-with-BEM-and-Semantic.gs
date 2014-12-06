@@ -1,15 +1,17 @@
 .WidgetNumbers {
 
+	&-title {
+
+		.titleFont;
+
+	}
+
 	&-item {
 		list-style: none;
 		margin-bottom: 0.5rem;
 	}
 
 	&-label {
-		display: inline-block;
-		width: 50%;
-		max-width: 10rem;
-		box-sizing: border-box;
 		padding: 0.5rem 1rem;
 
 		text-align: right;
@@ -18,10 +20,6 @@
 	}
 
 	&-value {
-		display: inline-block;
-		width: 50%;
-		max-width: 10rem;
-		box-sizing: border-box;
 		padding: 0.4rem 1rem;
 
 		color: @color1;
@@ -29,6 +27,18 @@
 		border-left: 0;
 
 		background-color: @color6;
+	}
+
+	&-label,
+	&-value {
+		display: inline-block;
+
+			width: 50%;
+		@media (min-width: @medium) {
+			max-width: 10rem;
+		}
+
+		box-sizing: border-box;
 	}
 }
 

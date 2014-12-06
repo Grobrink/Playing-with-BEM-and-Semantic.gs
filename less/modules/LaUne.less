@@ -2,47 +2,32 @@
 
 	.row(@columns);
 
-	min-height: 100vh;
-
-	background-image: url('./img/mont-blanc-01.jpg');
-	background-size: cover;
+	height: auto;
 
 
-	&-header {
-		.column(18,@columns);
-		.push(0);
-
-		@media (min-width: 400px) {
-			.column(16,@columns);
-			.push(1);
-		}
-
-		@media (min-width: 780px) {
-			.column(12,@columns);
-			.push(1);
-
-			display: none;
-		}
-
-		height: 5rem;
-		box-sizing: border-box;
-		padding: 1rem;
-
-		color: @color2;
-		font-size: 2rem;
-		background-color: @color1;
+	@media (min-width: @smallest) {
+		background-image: url('./img/mont-blanc-lq.jpg');
+		background-size: cover;
+	}
+	@media (min-width: @medium) {
+		background-image: url('./img/mont-blanc-mq.jpg');
+		background-size: cover;
+	}
+	@media (min-width: @larger) {
+		background-image: url('./img/mont-blanc-hq.jpg');
+		background-size: cover;
 	}
 
 	&-content {
 		.column(18,@columns);
 		.push(0);
 
-		@media (min-width: 620px) {
+		@media (min-width: @smaller) {
 			.column(16,@columns);
 			.push(1);
 		}
 
-		@media (min-width: 780px) {
+		@media (min-width: @medium) {
 			.column(12,@columns);
 			.push(1);
 		}
@@ -51,4 +36,92 @@
 
 		background-color: transparent;
 	}
+}
+
+.LaUne {
+
+	.row(@columns);
+
+	height: auto;
+
+
+	@media (min-width: @smallest) {
+		background-image: url('./img/mont-blanc-lq.jpg');
+		background-size: cover;
+	}
+	@media (min-width: @medium) {
+		background-image: url('./img/mont-blanc-mq.jpg');
+		background-size: cover;
+	}
+	@media (min-width: @larger) {
+		background-image: url('./img/mont-blanc-hq.jpg');
+		background-size: cover;
+	}
+
+	&-content {
+		.column(18,@columns);
+		.push(0);
+
+		@media (min-width: @smaller) {
+			.column(16,@columns);
+			.push(1);
+		}
+
+		@media (min-width: @medium) {
+			.column(12,@columns);
+			.push(1);
+		}
+
+		height: auto;
+
+		background-color: transparent;
+	}
+}
+.LaUne {
+	@media (min-width: @smallest) {
+		background-image: url('./img/mont-blanc-lq.jpg');
+		background-size: cover;
+	}
+	@media (min-width: @medium) {
+		background-image: url('./img/mont-blanc-mq.jpg');
+		background-size: cover;
+	}
+	@media (min-width: @larger) {
+		background-image: url('./img/mont-blanc-hq.jpg');
+		background-size: cover;
+	}
+
+	padding-top: 14rem;
+}
+
+.LaUne,
+.PublicationList {
+
+	.row(@columns);
+
+	height: auto;
+
+	&-content {
+		.column(18,@columns);
+		.push(0);
+
+		@media (min-width: @smaller) {
+			.column(16,@columns);
+			.push(1);
+		}
+
+		@media (min-width: @medium) {
+			.column(12,@columns);
+			.push(1);
+		}
+
+		height: auto;
+
+		background-color: transparent;
+	}
+}
+
+.PublicationList {
+
+	margin-top: 6rem;
 }
