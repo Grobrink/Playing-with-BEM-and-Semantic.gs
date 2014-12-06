@@ -233,8 +233,16 @@ body {
   overflow-x: hidden;
   background-color: #c8c8c8;
 }
+html,
+input,
+textarea,
+select,
+button {
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
 a {
-  color: #a4031f;
+  color: #cf5c36;
   font-weight: bold;
 }
 .BodyLayout {
@@ -331,7 +339,7 @@ a {
 }
 .SiteMainContent-block {
   width: 100%;
-  background-color: #9db5b2;
+  background-color: #ffffff;
 }
 .SiteMainContent-publicationList {
   background-color: #ffffff;
@@ -419,12 +427,15 @@ a {
 .Sidebar-header h2 {
   font-family: 'Pathway Gothic One', sans-serif;
   font-weight: 100;
-}
-.Sidebar-header h1 {
   font-size: 2.5rem;
+  display: inline;
 }
 .Sidebar-header h2 {
-  font-size: 2rem;
+  color: #cf5c36;
+  text-transform: lowercase;
+}
+.PublicationList {
+  padding-top: 6rem;
 }
 .LaUne {
   display: block;
@@ -432,127 +443,19 @@ a {
   margin: 0 -0.60386473%;
   *zoom: 1;
   height: auto;
-}
-.LaUne:before,
-.LaUne:after {
-  content: "";
-  display: table;
-}
-.LaUne:after {
-  clear: both;
-}
-@media (min-width: 400px) {
-  .LaUne {
-    background-image: url('img/mont-blanc-lq.jpg');
-    background-size: cover;
-  }
-}
-@media (min-width: 680px) {
-  .LaUne {
-    background-image: url('img/mont-blanc-mq.jpg');
-    background-size: cover;
-  }
-}
-@media (min-width: 960px) {
-  .LaUne {
-    background-image: url('img/mont-blanc-hq.jpg');
-    background-size: cover;
-  }
-}
-.LaUne-content {
-  display: inline;
-  float: left;
-  width: 98.79227053%;
-  margin: 0 0.60386473%;
-  margin-left: 0.60386473%;
-  height: auto;
-  background-color: transparent;
-}
-@media (min-width: 620px) {
-  .LaUne-content {
-    display: inline;
-    float: left;
-    width: 87.68115942%;
-    margin: 0 0.60386473%;
-    margin-left: 6.15942029%;
-  }
-}
-@media (min-width: 680px) {
-  .LaUne-content {
-    display: inline;
-    float: left;
-    width: 65.4589372%;
-    margin: 0 0.60386473%;
-    margin-left: 6.15942029%;
-  }
-}
-.LaUne {
-  display: block;
-  width: 101.20772947%;
-  margin: 0 -0.60386473%;
-  *zoom: 1;
-  height: auto;
-}
-.LaUne:before,
-.LaUne:after {
-  content: "";
-  display: table;
-}
-.LaUne:after {
-  clear: both;
-}
-@media (min-width: 400px) {
-  .LaUne {
-    background-image: url('img/mont-blanc-lq.jpg');
-    background-size: cover;
-  }
-}
-@media (min-width: 680px) {
-  .LaUne {
-    background-image: url('img/mont-blanc-mq.jpg');
-    background-size: cover;
-  }
-}
-@media (min-width: 960px) {
-  .LaUne {
-    background-image: url('img/mont-blanc-hq.jpg');
-    background-size: cover;
-  }
-}
-.LaUne-content {
-  display: inline;
-  float: left;
-  width: 98.79227053%;
-  margin: 0 0.60386473%;
-  margin-left: 0.60386473%;
-  height: auto;
-  background-color: transparent;
-}
-@media (min-width: 620px) {
-  .LaUne-content {
-    display: inline;
-    float: left;
-    width: 87.68115942%;
-    margin: 0 0.60386473%;
-    margin-left: 6.15942029%;
-  }
-}
-@media (min-width: 680px) {
-  .LaUne-content {
-    display: inline;
-    float: left;
-    width: 65.4589372%;
-    margin: 0 0.60386473%;
-    margin-left: 6.15942029%;
-  }
-}
-.LaUne {
   padding-top: 14rem;
 }
-@media (min-width: 400px) {
+.LaUne:before,
+.LaUne:after {
+  content: "";
+  display: table;
+}
+.LaUne:after {
+  clear: both;
+}
+@media (max-width: 680px) {
   .LaUne {
-    background-image: url('img/mont-blanc-lq.jpg');
-    background-size: cover;
+    background-color: #9db5b2;
   }
 }
 @media (min-width: 680px) {
@@ -565,6 +468,33 @@ a {
   .LaUne {
     background-image: url('img/mont-blanc-hq.jpg');
     background-size: cover;
+  }
+}
+.LaUne-content {
+  display: inline;
+  float: left;
+  width: 98.79227053%;
+  margin: 0 0.60386473%;
+  margin-left: 0.60386473%;
+  height: auto;
+  background-color: transparent;
+}
+@media (min-width: 620px) {
+  .LaUne-content {
+    display: inline;
+    float: left;
+    width: 87.68115942%;
+    margin: 0 0.60386473%;
+    margin-left: 6.15942029%;
+  }
+}
+@media (min-width: 680px) {
+  .LaUne-content {
+    display: inline;
+    float: left;
+    width: 65.4589372%;
+    margin: 0 0.60386473%;
+    margin-left: 6.15942029%;
   }
 }
 .LaUne,
@@ -615,9 +545,6 @@ a {
     margin: 0 0.60386473%;
     margin-left: 6.15942029%;
   }
-}
-.PublicationList {
-  margin-top: 6rem;
 }
 .BlogArticle {
   display: block;
@@ -791,6 +718,61 @@ a {
     margin-left: 0.60386473%;
   }
 }
+.BlogArticle-content:first-letter {
+  float: left;
+  color: #cf5c36;
+  font-size: 4rem;
+  line-height: 2.4rem;
+  padding-top: 1rem;
+  padding-right: 0.5rem;
+  font-family: Georgia;
+}
+.BlogArticle-content p {
+  margin-bottom: 1rem;
+}
+.BlogArticle-content a {
+  position: relative;
+  display: inline-block;
+  outline: none;
+  vertical-align: bottom;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.BlogArticle-content a:hover::before,
+.BlogArticle-content a:focus::before {
+  background-position: 0.5rem 50%;
+  color: #404d5b;
+  opacity: 1;
+  -webkit-transition-delay: 0s, 0s, 0s, 0.1s;
+  transition-delay: 0s, 0s, 0s, 0.1s;
+  -webkit-transform: scale(1) translateY(-2rem);
+  transform: scale(1) translateY(-2rem);
+}
+.BlogArticle-content a::before {
+  position: absolute;
+  top: -50%;
+  left: -2rem;
+  padding: 0.5rem 2rem 0.5rem 3.2rem;
+  width: auto;
+  height: 2rem;
+  background: #ffffff url(img/link.svg) no-repeat;
+  background-size: 2rem;
+  background-position: -4rem 50%;
+  border-radius: 0.4rem;
+  content: attr(href);
+  white-space: nowrap;
+  word-break: break-all;
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: transparent;
+  line-height: 1.2;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s, color 0.3s, -webkit-transform 0.3s, background-position 0.2s;
+  transition: opacity 0.3s, color 0.3s, transform 0.3s, background-position 0.2s;
+  -webkit-transform: scale(0.5);
+  transform: scale(0.5);
+  pointer-events: auto;
+}
 .BlogArticle__1of1,
 .BlogArticle__oneOfMany {
   display: block;
@@ -863,6 +845,9 @@ a {
 .WidgetNumbers-title {
   font-family: 'Pathway Gothic One', sans-serif;
   font-weight: 100;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
 }
 .WidgetNumbers-item {
   list-style: none;

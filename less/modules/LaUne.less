@@ -4,84 +4,10 @@
 
 	height: auto;
 
-
-	@media (min-width: @smallest) {
-		background-image: url('./img/mont-blanc-lq.jpg');
-		background-size: cover;
-	}
-	@media (min-width: @medium) {
-		background-image: url('./img/mont-blanc-mq.jpg');
-		background-size: cover;
-	}
-	@media (min-width: @larger) {
-		background-image: url('./img/mont-blanc-hq.jpg');
-		background-size: cover;
+	@media (max-width: @medium) {
+		background-color: @color4;
 	}
 
-	&-content {
-		.column(18,@columns);
-		.push(0);
-
-		@media (min-width: @smaller) {
-			.column(16,@columns);
-			.push(1);
-		}
-
-		@media (min-width: @medium) {
-			.column(12,@columns);
-			.push(1);
-		}
-
-		height: auto;
-
-		background-color: transparent;
-	}
-}
-
-.LaUne {
-
-	.row(@columns);
-
-	height: auto;
-
-
-	@media (min-width: @smallest) {
-		background-image: url('./img/mont-blanc-lq.jpg');
-		background-size: cover;
-	}
-	@media (min-width: @medium) {
-		background-image: url('./img/mont-blanc-mq.jpg');
-		background-size: cover;
-	}
-	@media (min-width: @larger) {
-		background-image: url('./img/mont-blanc-hq.jpg');
-		background-size: cover;
-	}
-
-	&-content {
-		.column(18,@columns);
-		.push(0);
-
-		@media (min-width: @smaller) {
-			.column(16,@columns);
-			.push(1);
-		}
-
-		@media (min-width: @medium) {
-			.column(12,@columns);
-			.push(1);
-		}
-
-		height: auto;
-
-		background-color: transparent;
-	}
-}
-.LaUne {
-	@media (min-width: @smallest) {
-		background-image: url('./img/mont-blanc-lq.jpg');
-		background-size: cover;
-	}
 	@media (min-width: @medium) {
 		background-image: url('./img/mont-blanc-mq.jpg');
 		background-size: cover;
@@ -92,6 +18,25 @@
 	}
 
 	padding-top: 14rem;
+
+	&-content {
+		.column(18,@columns);
+		.push(0);
+
+		@media (min-width: @smaller) {
+			.column(16,@columns);
+			.push(1);
+		}
+
+		@media (min-width: @medium) {
+			.column(12,@columns);
+			.push(1);
+		}
+
+		height: auto;
+
+		background-color: transparent;
+	}
 }
 
 .LaUne,
@@ -119,9 +64,4 @@
 
 		background-color: transparent;
 	}
-}
-
-.PublicationList {
-
-	margin-top: 6rem;
 }
